@@ -1,0 +1,18 @@
+[project]
+name = "greek-anki"
+version = "0.1.0"
+description = "CLI tool for creating Greek vocabulary Anki cards"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0",
+    "anthropic>=0.40",
+    "rich>=13.0",
+    "pyperclip>=1.8",
+]
+
+[project.scripts]
+greek-anki = "greek_anki.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
